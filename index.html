@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orrery Web App</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <div id="title">Orrery Web App that Displays Near-Earth Objects</div>
+    <div id="info">Hover over an object to see information</div>
+    <div id="controls">
+        <div class="control-group">
+            <label for="speed">Simulation Speed:</label>
+            <input type="range" id="speed" min="0" max="5" step="0.1" value="1">
+            <span id="speedValue">1x</span>
+        </div>
+        <div class="control-group">
+            <label for="cameraMode">Camera Mode:</label>
+            <select id="cameraMode">
+                <option value="orbit">Orbit</option>
+                <option value="top">Top View</option>
+                <option value="follow">Follow Object</option>
+            </select>
+        </div>
+        <div class="control-group">
+            <label for="showOrbits">Show Orbits:</label>
+            <input type="checkbox" id="showOrbits" checked>
+        </div>
+    </div>
+    <div id="objectSelector">
+        <label for="followObject">Follow Object:</label>
+        <select id="followObject"></select>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js">
+
+    </script>
+</body>
+</html>
